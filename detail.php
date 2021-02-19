@@ -153,6 +153,7 @@
                                     $item->unit_price = $_POST['price'];
                                     $preference->items = array($item);
                                     $preference->external_reference = "giancta92@gmail.com";
+                                    $preference->notification_url = "https://examen-mercadopago-gian-torres.herokuapp.com/notify.php";
                                     $preference->back_urls = array(
                                         "success" => "https://examen-mercadopago-gian-torres.herokuapp.com/success.php",
                                         "failure" => "https://examen-mercadopago-gian-torres.herokuapp.com/failure.php",
@@ -188,9 +189,10 @@
                                         "zip_code" => "03940"
                                     );
                                     ?>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    <!--<button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>-->
                                     <script
                                         src="https://www.mercadopago.com.pe/integrations/v1/web-payment-checkout.js"
+                                        data-button-label="Pagar la compra"
                                         data-preference-id="<?php echo $preference->id; ?>">
                                     </script>
                                 </div>
