@@ -100,7 +100,7 @@
                                             <div class="clearfix image-list xs-no-js as-util-relatedlink relatedlink" data-relatedlink="6|Powerbeats3 Wireless Earphones - Neighborhood Collection - Brick Red|MPXP2">
                                                 <div class="as-tilegallery-element as-image-selected">
                                                     <div class=""></div>
-                                                    <img src="./assets/003.jpg" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" style="content:-webkit-image-set(url(<?php echo $_POST['img'] ?>) 2x);">
+                                                    <img src="<?php echo $_POST['img'] ?>" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" style="content:-webkit-image-set(url(<?php echo $_POST['img'] ?>) 2x);">
                                                 </div>
                                                 
                                             </div>
@@ -137,16 +137,55 @@
                                     // Agrega credenciales
                                     MercadoPago\SDK::setAccessToken('APP_USR-8208253118659647-112521-dd670f3fd6aa9147df51117701a2082e-677408439');
 
+                                    //Integrator ID
+                                    MercadoPago\SDK::setIntegratorId("dev_2e4ad5dd362f11eb809d0242ac130004");
+
                                     // Crea un objeto de preferencia
                                     $preference = new MercadoPago\Preference();
 
                                     // Crea un ítem en la preferencia
                                     $item = new MercadoPago\Item();
+                                    $item->id = "1234";
                                     $item->title = $_POST['title'];
+                                    $item->description = "DispositivomóvildeTiendae-commerce";
+                                    $item->picture_url = $_POST['img'];
                                     $item->quantity = $_POST['unit'];
                                     $item->unit_price = $_POST['price'];
                                     $preference->items = array($item);
+                                    $preference->external_reference = "giancta92@gmail.com";
+                                    $preference->back_urls = array(
+                                        "success" => "https://examen-mercadopago-gian-torres.herokuapp.com/success.php",
+                                        "failure" => "https://examen-mercadopago-gian-torres.herokuapp.com/failure.php",
+                                        "pending" => "https://examen-mercadopago-gian-torres.herokuapp.com/pending.php"
+                                    );
+                                    $preference->payment_methods = array(
+                                        "excluded_payment_methods" => array(
+                                            array("id" => "diners")
+                                        ),
+                                        "excluded_payment_types" => array(
+                                            array("id" => "atm")
+                                        ),
+                                        "installments" => 6
+                                    );
                                     $preference->save();
+
+                                    $payer = new MercadoPago\Payer();
+                                    $payer->name = "Lalo landa";
+                                    $payer->email = "test_user_46542185@testuser.com";
+                                    $payer->phone = array(
+                                        "area_code" => "52",
+                                        "number" => "5549737300"
+                                    );
+                                    $payer->identification = array(
+                                        "type" => "DNI",
+                                        "number" => "22334445"
+                                    );
+
+                                    $payer->address = array(
+                                        "street_name" => "Insurgentes Sur",
+                                        "street_number" => 1602,
+                                        "zip_code" => "03940"
+                                    );
                                     ?>
                                     <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
                                     <script
