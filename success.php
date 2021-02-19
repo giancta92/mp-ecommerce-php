@@ -84,47 +84,47 @@ echo '<h3>Pago exitoso</h3>'
 <tbody>
 <tr style="height: 18px;">
 <td style="width: 50%; height: 18px;">Collection ID</td>
-<td style="width: 50%; height: 18px;">&lt;?php echo $collection_id;?&gt;</td>
+<td style="width: 50%; height: 18px;"><?php echo $collection_id;?></td>
 </tr>
 <tr style="height: 18px;">
 <td style="width: 50%; height: 18px;">Collection Status</td>
-<td style="width: 50%; height: 18px;">&lt;?php echo $collection_status;?&gt;</td>
+<td style="width: 50%; height: 18px;"><?php echo $collection_status;?></td>
 </tr>
 <tr style="height: 18px;">
 <td style="width: 50%; height: 18px;">Payment ID</td>
-<td style="width: 50%; height: 18px;">&lt;?php echo $payment_id;?&gt;</td>
+<td style="width: 50%; height: 18px;"><?php echo $payment_id;?></td>
 </tr>
 <tr style="height: 18px;">
 <td style="width: 50%; height: 18px;">Status</td>
-<td style="width: 50%; height: 18px;">&lt;?php echo $status;?&gt;</td>
+<td style="width: 50%; height: 18px;"><?php echo $status;?></td>
 </tr>
 <tr style="height: 18px;">
 <td style="width: 50%; height: 18px;">External reference</td>
-<td style="width: 50%; height: 18px;">&lt;?php echo $external_reference;?&gt;</td>
+<td style="width: 50%; height: 18px;"><?php echo $external_reference;?></td>
 </tr>
 <tr style="height: 18px;">
 <td style="width: 50%; height: 18px;">Payment type</td>
-<td style="width: 50%; height: 18px;">&lt;?php echo $payment_type;?&gt;</td>
+<td style="width: 50%; height: 18px;"><?php echo $payment_type;?></td>
 </tr>
 <tr style="height: 18px;">
 <td style="width: 50%; height: 18px;">Merchant order ID</td>
-<td style="width: 50%; height: 18px;">&lt;?php echo $merchant_order_id;?&gt;</td>
+<td style="width: 50%; height: 18px;"><?php echo $merchant_order_id;?></td>
 </tr>
 <tr style="height: 18px;">
 <td style="width: 50%; height: 18px;">Preference ID</td>
-<td style="width: 50%; height: 18px;">&lt;?php echo $preference_id;?&gt;</td>
+<td style="width: 50%; height: 18px;"><?php echo $preference_id;?></td>
 </tr>
 <tr style="height: 18px;">
 <td style="width: 50%; height: 18px;">Site ID</td>
-<td style="width: 50%; height: 18px;">&lt;?php echo $site_id;?&gt;</td>
+<td style="width: 50%; height: 18px;"><?php echo $site_id;?></td>
 </tr>
 <tr style="height: 18px;">
 <td style="width: 50%; height: 18px;">Processing mode</td>
-<td style="width: 50%; height: 18px;">&lt;?php echo $processing_mode;?&gt;</td>
+<td style="width: 50%; height: 18px;"><?php echo $processing_mode;?></td>
 </tr>
 <tr style="height: 18px;">
 <td style="width: 50%; height: 18px;">Merchant account ID</td>
-<td style="width: 50%; height: 18px;">&lt;?php echo $merchant_account_id;?&gt;</td>
+<td style="width: 50%; height: 18px;"><?php echo $merchant_account_id;?></td>
 </tr>
 </tbody>
 </table>
