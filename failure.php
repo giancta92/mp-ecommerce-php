@@ -78,7 +78,7 @@ $site_id = $_REQUEST['site_id'];
 $processing_mode = $_REQUEST['processing_mode'];
 $merchant_account_id = $_REQUEST['merchant_account_id'];
 ?>
-<table style="border-collapse: collapse; width: 100%; height: 198px; max-width:500px;" border="1">
+<table style="border-collapse: collapse; width: 100%; height: 198px; max-width:500px;margin:auto" border="1">
 <tbody>
 <tr style="height: 18px;">
 <td style="width: 50%; height: 18px;">Collection ID</td>
