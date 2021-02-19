@@ -16,5 +16,5 @@
             $plan = MercadoPago\Invoice.find_by_id($_POST["id"]);
             break;
     }
-
+print("<pre>".print_r($payment,true)."</pre>");
 ?>
