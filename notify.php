@@ -17,4 +17,5 @@
             break;
     }
 print("<pre>".print_r($payment,true)."</pre>");
+echo 'test';
 ?>
