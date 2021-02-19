@@ -65,7 +65,67 @@
             <div class="as-search-results as-filter-open as-category-landing as-desktop" id="as-search-results">
 
             	<h3>El pago está siendo revisado</h3>
-
+<?php
+$collection_id = $_REQUEST['collection_id'];
+$collection_status = $_REQUEST['collection_status'];
+$payment_id = $_REQUEST['payment_id'];
+$status = $_REQUEST['status'];
+$external_reference = $_REQUEST['external_reference'];
+$payment_type = $_REQUEST['payment_type'];
+$merchant_order_id = $_REQUEST['merchant_order_id'];
+$preference_id = $_REQUEST['preference_id'];
+$site_id = $_REQUEST['site_id'];
+$processing_mode = $_REQUEST['processing_mode'];
+$merchant_account_id = $_REQUEST['merchant_account_id'];
+?>
+<table style="border-collapse: collapse; width: 100%; height: 198px; max-width:500px;" border="1">
+<tbody>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;">Collection ID</td>
+<td style="width: 50%; height: 18px;"><?php echo $collection_id;?></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;">Collection Status</td>
+<td style="width: 50%; height: 18px;"><?php echo $collection_status;?></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;">Payment ID</td>
+<td style="width: 50%; height: 18px;"><?php echo $payment_id;?></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;">Status</td>
+<td style="width: 50%; height: 18px;"><?php echo $status;?></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;">External reference</td>
+<td style="width: 50%; height: 18px;"><?php echo $external_reference;?></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;">Payment type</td>
+<td style="width: 50%; height: 18px;"><?php echo $payment_type;?></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;">Merchant order ID</td>
+<td style="width: 50%; height: 18px;"><?php echo $merchant_order_id;?></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;">Preference ID</td>
+<td style="width: 50%; height: 18px;"><?php echo $preference_id;?></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;">Site ID</td>
+<td style="width: 50%; height: 18px;"><?php echo $site_id;?></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;">Processing mode</td>
+<td style="width: 50%; height: 18px;"><?php echo $processing_mode;?></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;">Merchant account ID</td>
+<td style="width: 50%; height: 18px;"><?php echo $merchant_account_id;?></td>
+</tr>
+</tbody>
+</table>
             </div>
         </div>
         <div role="alert" class="as-loader-text ally" aria-live="assertive"></div>
