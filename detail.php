@@ -158,6 +158,7 @@
                                         "failure" => "https://examen-mercadopago-gian-torres.herokuapp.com/failure.php",
                                         "pending" => "https://examen-mercadopago-gian-torres.herokuapp.com/pending.php"
                                     );
+                                    $preference->auto_return = "approved";
                                     $preference->payment_methods = array(
                                         "excluded_payment_methods" => array(
                                             array("id" => "diners")
