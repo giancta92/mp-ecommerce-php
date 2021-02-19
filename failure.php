@@ -64,7 +64,7 @@
             </div>
             <div class="as-search-results as-filter-open as-category-landing as-desktop" id="as-search-results">
 
-<h3>El pago ha fallado</h3>
+<h3 style="text-align:center;">El pago ha fallado</h3>
 <?php
 $collection_id = $_REQUEST['collection_id'];
 $collection_status = $_REQUEST['collection_status'];

@@ -77,7 +77,7 @@ $site_id = $_REQUEST['site_id'];
 $processing_mode = $_REQUEST['processing_mode'];
 $merchant_account_id = $_REQUEST['merchant_account_id'];
 
-echo '<h3>Pago exitoso</h3>'
+echo '<h3 style="text-align:center;">Pago exitoso</h3>'
 
 ?>
 <table style="border-collapse: collapse; width: 100%; height: 198px; max-width:500px;" border="1">
