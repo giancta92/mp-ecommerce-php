@@ -88,7 +88,7 @@
                         </div>
                         <div class="as-accessories-results  as-search-desktop">
                             <div class="width:60%">
-                                <div class="as-producttile-tilehero with-paddlenav " style="float:left;">
+                                <div class="as-producttile-tilehero with-paddlenav " style="float:left; max-width: 50%;">
                                     <div class="as-dummy-container as-dummy-img">
 
                                         <img src="./assets/wireless-headphones" class="ir ir item-image as-producttile-image  " style="max-width: 70%;max-height: 70%;"alt="" width="445" height="445">
