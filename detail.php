@@ -190,6 +190,7 @@
                                         "street_number" => 1602,
                                         "zip_code" => "03940"
                                     );
+                                    $preference->payer = array($payer);
                                     ?>
                                     <!--<button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>-->
                                     <script
