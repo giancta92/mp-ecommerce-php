@@ -24,7 +24,7 @@
 	}
 	error_log( print_r( $payment, true ) );
 */
-public function webhook() {
+//public function webhook() {
     MercadoPago\SDK::setAccessToken("APP_USR-8208253118659647-112521-dd670f3fd6aa9147df51117701a2082e-677408439");
     MercadoPago\SDK::setIntegratorId(getenv('dev_2e4ad5dd362f11eb809d0242ac130004'));
     $info = json_decode($this->input->raw_input_stream);
@@ -81,6 +81,6 @@ public function webhook() {
     $this->output->set_status_header(200);
     return;
     error_log( print_r( $info, true ) );
-}
+//}
 
 ?>
