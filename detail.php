@@ -154,25 +154,6 @@
                                     $item->quantity = $_POST['unit'];
                                     $item->unit_price = $_POST['price'];
                                     $preference->items = array($item);
-                                    $preference->external_reference = "giancta92@gmail.com";
-                                    $preference->notification_url = "https://examen-mercadopago-gian-torres.herokuapp.com/notify.php";
-                                    $preference->back_urls = array(
-                                        "success" => "https://examen-mercadopago-gian-torres.herokuapp.com/success.php",
-                                        "failure" => "https://examen-mercadopago-gian-torres.herokuapp.com/failure.php",
-                                        "pending" => "https://examen-mercadopago-gian-torres.herokuapp.com/pending.php"
-                                    );
-                                    $preference->auto_return = "approved";
-                                    $preference->payment_methods = array(
-                                        "excluded_payment_methods" => array(
-                                            array("id" => "diners")
-                                        ),
-                                        "excluded_payment_types" => array(
-                                            array("id" => "atm")
-                                        ),
-                                        "installments" => 6
-                                    );
-                                    $preference->save();
-
                                     $payer = new MercadoPago\Payer();
                                     $payer->name = "Lalo landa";
                                     $payer->email = "test_user_46542185@testuser.com";
@@ -191,6 +172,24 @@
                                         "zip_code" => "03940"
                                     );
                                     $preference->payer = array($payer);
+                                    $preference->external_reference = "giancta92@gmail.com";
+                                    $preference->notification_url = "https://examen-mercadopago-gian-torres.herokuapp.com/notify.php";
+                                    $preference->back_urls = array(
+                                        "success" => "https://examen-mercadopago-gian-torres.herokuapp.com/success.php",
+                                        "failure" => "https://examen-mercadopago-gian-torres.herokuapp.com/failure.php",
+                                        "pending" => "https://examen-mercadopago-gian-torres.herokuapp.com/pending.php"
+                                    );
+                                    $preference->auto_return = "approved";
+                                    $preference->payment_methods = array(
+                                        "excluded_payment_methods" => array(
+                                            array("id" => "diners")
+                                        ),
+                                        "excluded_payment_types" => array(
+                                            array("id" => "atm")
+                                        ),
+                                        "installments" => 6
+                                    );
+                                    $preference->save();
                                     ?>
                                     <!--<button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>-->
                                     <script
