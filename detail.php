@@ -164,7 +164,7 @@
                                     $payer->identification = array(
                                         "type" => "DNI",
                                         "number" => "22334445"
-                                    );
+                              e      );
 
                                     $payer->address = array(
                                         "street_name" => "Insurgentes Sur",
