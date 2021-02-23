@@ -78,10 +78,10 @@ public function webhook()
                 return;
             break;
         }
-        error_log( print_r( $info, true ) );
     }
     $this->output->set_status_header(200);
     return;
+    error_log( print_r( $info, true ) );
 }
 
 ?>
