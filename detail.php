@@ -154,24 +154,6 @@
                                     $item->quantity = $_POST['unit'];
                                     $item->unit_price = $_POST['price'];
                                     $preference->items = array($item);
-                                    $payer = new MercadoPago\Payer();
-                                    $payer->name = "Lalo landa";
-                                    $payer->email = "test_user_46542185@testuser.com";
-                                    $payer->phone = array(
-                                        "area_code" => "52",
-                                        "number" => "5549737300"
-                                    );
-                                    $payer->identification = array(
-                                        "type" => "DNI",
-                                        "number" => "22334445"
-                                    );
-
-                                    $payer->address = array(
-                                        "street_name" => "Insurgentes Sur",
-                                        "street_number" => 1602,
-                                        "zip_code" => "03940"
-                                    );
-                                    $preference->payer = array($payer);
                                     $preference->external_reference = "giancta92@gmail.com";
                                     $preference->notification_url = "https://examen-mercadopago-gian-torres.herokuapp.com/notify.php";
                                     $preference->back_urls = array(
@@ -190,6 +172,24 @@
                                         "installments" => 6
                                     );
                                     $preference->save();
+
+                                    $payer = new MercadoPago\Payer();
+                                    $payer->name = "Lalo landa";
+                                    $payer->email = "test_user_46542185@testuser.com";
+                                    $payer->phone = array(
+                                        "area_code" => "52",
+                                        "number" => "5549737300"
+                                    );
+                                    $payer->identification = array(
+                                        "type" => "DNI",
+                                        "number" => "22334445"
+                                    );
+
+                                    $payer->address = array(
+                                        "street_name" => "Insurgentes Sur",
+                                        "street_number" => 1602,
+                                        "zip_code" => "03940"
+                                    );
                                     ?>
                                     <!--<button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>-->
                                     <script
