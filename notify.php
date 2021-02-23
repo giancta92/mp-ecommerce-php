@@ -2,7 +2,6 @@
 	header('HTTP/1.1 200 OK');
 	$data = file_get_contents('php://input');
 	$data = json_decode($data, true);
-	$data = wp_unslash($data);
 	if ( empty( $data ) ) {
 		die( __( 'Empty Data', 'charitable' ) );
 	}
