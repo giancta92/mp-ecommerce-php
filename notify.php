@@ -48,10 +48,6 @@
 			            $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
 			            break;
 			    }
-			    $donation_id = $merchant_order->external_reference;
-			    
-			do_action( 'charitable_mercadopago_web_accept', $data, $donation_id );
-
     error_log( print_r( $payment, true ) );
 //}
 
