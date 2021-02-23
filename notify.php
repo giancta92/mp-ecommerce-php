@@ -1,8 +1,4 @@
  <?php
- 
-	if ( isset( $_SERVER['REQUEST_METHOD'] ) && 'POST' != $_SERVER['REQUEST_METHOD'] ) {
-		die( __( 'Invalid MercadoPago ITN', 'charitable-mercadopago' ) );
-	}
 	header('HTTP/1.1 200 OK');
 	$data = file_get_contents('php://input');
 	$data = json_decode($data, true);
