@@ -48,7 +48,8 @@
 			            $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
 			            break;
 			    }
-    error_log( print_r( $merchant_order, true ) );
+			    $jsonmo = json_encode($merchant_order);
+    error_log( print_r( $jsonmo, true ) );
 //}
 
 ?>
